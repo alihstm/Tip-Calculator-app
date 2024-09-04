@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
+</head>
+
+<body>
+    <label class="app-name">SPLI TTER</label>
+    <main>
+        <section class="left-section">
+            <div class="bill">
+                <div>
+                    <label class="bill-text">Bill</label>
+                    <p id="bill-warning" class="warning-msg">Invalid input</p>
+                </div>
+                <input id="Bill" class="input-bx" type="text" maxlength="6" placeholder="000.00">
+                <img src="material/icon-dollar.svg" loading="lazy">
+            </div>
+
+            <div class="numberOF-people">
+                <div>
+                    <label class="people-text">Number of People</label>
+                    <p id="people-warning" class="warning-msg">Invalid input</p>
+                </div>
+                <input id="People" class="input-bx" type="text" maxlength="2" placeholder="00">
+                <img src="material/icon-person.svg" loading="lazy">
+            </div>
+
+            <div class="select-tip">
+                <label class="selectTip-text">Select Tip %</label>
+
+                <div class="tip-boxes">
+                    <button id="tip1" class="tip">5%</button>
+
+                    <button id="tip2" class="tip">10%</button>
+
+                    <button id="tip3" class="tip">15%</button>
+
+                    <button id="tip4" class="tip">25%</button>
+
+                    <button id="tip5" class="tip">50%</button>
+
+                    <button id="tip6" class="tip">75%</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="amount-total">
+                <div class="amount">
+                    <div class="result-texts">
+                        <p class="title">Tip Amount</p>
+                        <p class="des">/ person</p>
+                    </div>
+
+                    <p id="tipAmount" class="price">$0.00</p>
+                </div>
+
+                <div class="total">
+                    <div class="result-texts">
+                        <p class="title">Total</p>
+                        <p class="des">/ person</p>
+                    </div>
+
+                    <p id="total" class="price">$0.00</p>
+                </div>
+            </div>
+
+            <button id="reset-btn" onclick="Reset()">RESET</button>
+        </section>
+    </main>
+    <script src="tip-calculator.js"></script>
+</body>
+
+</html>

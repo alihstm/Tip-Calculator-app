@@ -1,0 +1,210 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  margin: 0px;
+}
+label,
+div,
+p {
+  user-select: none;
+  font-family: Space Mono;
+  margin: 0px;
+}
+.app-name {
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: 700;
+  width: 80px;
+  letter-spacing: 10px;
+  user-select: none;
+  margin-bottom: 70px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(189, 41%, 97%);
+  height: 390px;
+  width: 820px;
+  padding: 30px 30px 30px 50px;
+  border-radius: 24px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-color: hsl(183, 100%, 15%);
+  width: 325px;
+  height: 290px;
+  padding: 60px 40px 40px 40px;
+  border-radius: 16px;
+}
+.amount-total {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 170px;
+}
+:is(.amount, .total) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 325px;
+}
+.title {
+  color: hsl(189, 41%, 97%);
+  font-size: 17px;
+  font-weight: 700;
+}
+.des {
+  color: hsl(184, 14%, 56%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.price {
+  color: hsl(172, 67%, 45%);
+  font-size: 45px;
+  font-weight: 700;
+  transition: 0.15s;
+}
+.right-section button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(183, 100%, 15%);
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Space Mono;
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  width: 325px;
+  height: 40px;
+  border-radius: 5px;
+  transition: 0.15s;
+}
+.right-section button:hover {
+  cursor: pointer;
+  background-color: hsl(172, 60%, 62%);
+}
+.right-section button:active {
+  transform: scale(0.9);
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 350px;
+  height: 360px;
+}
+:is(.bill, .numberOF-people) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 60px;
+  width: 325px;
+}
+:is(.bill-text, .people-text, .selectTip-text) {
+  color: hsl(186, 12%, 32%);
+  font-size: 15px;
+  font-weight: 700;
+}
+.input-bx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 250px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: hsl(183, 78%, 89%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+}
+.input-bx::placeholder {
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+.input-bx:focus {
+  font-family: Space Mono;
+  outline: none;
+  outline: 1px solid hsl(172, 67%, 45%);
+  caret-color: hsl(172, 67%, 45%);
+}
+#People {
+  padding-left: 310px;
+  width: 40px;
+}
+:is(.bill img, .numberOF-people img) {
+  position: sticky;
+  margin-left: 10px;
+  margin-top: -40px;
+}
+:is(.bill div, .numberOF-people div) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+}
+.warning-msg {
+  display: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: red;
+}
+.select-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 130px;
+}
+.tip-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 15px;
+}
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  font-family: Space Mono;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  transition: 0.15s;
+}
+.tip:hover {
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+}
+.tip:active {
+  transform: scale(0.9);
+}
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
